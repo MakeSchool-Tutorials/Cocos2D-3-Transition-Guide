@@ -76,7 +76,3 @@ In Cocos 2d 3.x you do not need to call scheduleUpdate anymore. Instead you only
 In the coming days and weeks we will be adding many tutorials on new Cocos2d 3.0 APIs, so stay tuned.
 
 If you're missing any instructions for Cocos2d 3.0 please shoot me an E-Mail: benji@makegameswith.us
-
-            <div>
-
-            </div>
