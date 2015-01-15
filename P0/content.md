@@ -5,7 +5,7 @@ slug: coco2d-brief-tranistion-guide
 
 For this tutorial post we assume you are already familiar with Cocos2d 2.x. We will point out the important changes that come with the new version of Cocos and give example implementations based on what you already know from Cocos2d 2.x.
 
-#   CCNodes, CCScenes and CCLayers<span style=""></span>
+#   CCNodes, CCScenes and CCLayers
 
 CCLayer does not exist anymore. CCLayer used to be the class you used for scenes with user interaction. In Cocos2d 3.x any CCNode can handle touch input. *CCNode is the new CCLayer*. For scenes use CCScene for everything in your scene use CCNode.
 
@@ -15,21 +15,21 @@ We will soon come up with a complete tutorial on touch handling in Cocos2d 3.0. 
 
 *   to enable touch handling on you CCNode:
 
-    self.userInteractionEnabled = TRUE;
+    	self.userInteractionEnabled = TRUE;
 
 *   to catch a touch and its touch position:
 
-    - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
-    {
-         CGPoint touchLocation = [touch locationInNode:self]; 
-         // put your touch handling code here
-    }
+	    - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
+	    {
+	         CGPoint touchLocation = [touch locationInNode:self]; 
+	         // put your touch handling code here
+	    }
 
 *   And to know the three other methods that can be implemented to determine moving, ending, or canceled touches:
 
-    - (void)touchMoved:(UITouch *)touch withEvent:(UIEvent *)event
-    - (void)touchEnded:(UITouch *)touch withEvent:(UIEvent *)event
-    - (void)touchCancelled:(UITouch *)touch withEvent:(UIEvent *)event
+	    - (void)touchMoved:(UITouch *)touch withEvent:(UIEvent *)event
+	    - (void)touchEnded:(UITouch *)touch withEvent:(UIEvent *)event
+	    - (void)touchCancelled:(UITouch *)touch withEvent:(UIEvent *)event
 
 # Good bye CCMenu! Hello CCLayout!
 
