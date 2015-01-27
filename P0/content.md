@@ -75,6 +75,19 @@ In Cocos 2d 3.x you do not need to call scheduleUpdate anymore. Instead you only
            ...
     }
 
+# Resource management
+
+If you don't plan on using SpriteBuilder, you can continue to use suffixes to manage images of different resolutions.
+
+First, you need to comment out [CCBReader configureCCFileUtils] in AppDelegate.m. After that, the following suffixes should work:
+
+ - no suffix, non-retina iPhone
+ - "-hd", retina iPhone
+ - "-iphone5hd", iPhone 5+
+ - "-ipad", non-retina iPad
+ - "-ipadhd", retina iPad
+ - "-iphone5", non-retina assets used for iPhone 5+ if no "-iphone5hd"
+
 # There's more to come!
 
 In the coming days and weeks we will be adding many tutorials on new Cocos2d 3.0 APIs, so stay tuned.
