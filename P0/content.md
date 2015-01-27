@@ -31,6 +31,10 @@ We will soon come up with a complete tutorial on touch handling in Cocos2d 3.0. 
 	    - (void)touchEnded:(UITouch *)touch withEvent:(UIEvent *)event
 	    - (void)touchCancelled:(UITouch *)touch withEvent:(UIEvent *)event
 
+## Note for Cocos2D 3.3
+
+If you are using Cocos2D 3.3+ (it's part of SpriteBuilder 1.3+) you will have to replace all occurrences of *UITouch* and *UITouchEvent* with *CCTouch* and *CCTouchEvent*, respectively. You can find more information as part of the [SpriteBuilder update guide](http://www.spritebuilder.com/update).
+
 # Good bye CCMenu! Hello CCLayout!
 
 In the past CCMenu was the easiest way to create a menu. Since CCMenu was the only class that provided handy layout methods (alignItemsVertically, etc.) the class was often used to layout a lot of other things, not only menus. Cocos2d 3.0 solves this issue by providing a CCLayout class. This class can layout any kind of CCNode, which makes layouting our scenes a charm. If you want to build a menu in Cocos2d 3.0 you will use a CCLayout container and simply add CCButtons to it. This is an example from a simple layout:
