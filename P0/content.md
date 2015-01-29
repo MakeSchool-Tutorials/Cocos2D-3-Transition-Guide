@@ -1,6 +1,6 @@
 ---            
 title: Cocos2D a Brief Transition Guide
-slug: coco2d-brief-tranistion-guide
+slug: p1
 gamernews_id: 359
 ---
 
