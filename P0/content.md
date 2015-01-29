@@ -1,6 +1,7 @@
 ---            
 title: Cocos2D a Brief Transition Guide
 slug: coco2d-brief-tranistion-guide
+gamernews_id: 359
 ---
 
 For this tutorial post we assume you are already familiar with Cocos2d 2.x. We will point out the important changes that come with the new version of Cocos and give example implementations based on what you already know from Cocos2d 2.x.
